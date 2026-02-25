@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>NVIDIA RTX | Ray Tracing</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --green:#76b900;
+  --black:#0b0b0b;
+  --dark:#141414;
+  --text:#e6e6e6;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Segoe UI, Arial, sans-serif;
+}
+
+body{
+  background:var(--black);
+  color:var(--text);
+}
+
+/* HEADER */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 50px;
+  background:var(--dark);
+  border-bottom:2px solid var(--green);
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+}
+
+.brand img{
+  height:42px;
+}
+
+.brand-text{
+  color:white;
+  font-size:1.4rem;
+  font-weight:700;
+  letter-spacing:2px;
+}
+
+.brand-text:hover{
+  color:var(--green);
+}
+
+nav a{
+  color:var(--text);
+  margin-left:30px;
+  text-decoration:none;
+  font-weight:500;
+}
+
+nav a:hover{
+  color:var(--green);
+}
+
+/* HERO */
+.hero{
+  min-height:70vh;
+  background:
+    linear-gradient(to right,rgba(0,0,0,.85),rgba(0,0,0,.4)),
+    url("https://blogs.nvidia.com/wp-content/uploads/2025/01/GDOH4382-scaled.jpg");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  padding:60px;
+}
+
+.hero h1{
+  font-size:3rem;
+  color:var(--green);
+}
+
+.hero p{
+  max-width:520px;
+  margin-top:20px;
+  line-height:1.6;
+}
+
+/* CONTENT */
+section{
+  padding:70px 50px;
+}
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+
+.feature{
+  background:var(--dark);
+  border:1px solid #222;
+  border-radius:8px;
+  padding:30px;
+  transition:.3s;
+}
+
+.feature:hover{
+  transform:translateY(-8px);
+  border-color:var(--green);
+}
+
+.feature h3{
+  color:var(--green);
+  margin-bottom:10px;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:25px;
+  background:var(--dark);
+  border-top:2px solid var(--green);
+  font-size:.9rem;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  header{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  nav a{
+    margin:0 12px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a href="home.html" class="brand">
+    <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/2/21/Nvidia_logo.svg/330px-Nvidia_logo.svg.png" alt="NVIDIA Logo">
+    <span class="brand-text">NVIDIA</span>
+  </a>
+
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="rtx.html">RTX</a>
+    <a href="ai.html">AI</a>
+    <a href="developers.html">Developers</a>
+    <a href="#">Support</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>NVIDIA RTX</h1>
+    <p>
+      Real-time ray tracing, AI-powered DLSS,
+      and next-gen performance for gamers and creators.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="features">
+    <div class="feature">
+      <h3>Ray Tracing</h3>
+      <p>Ultra-realistic lighting, shadows, and reflections.</p>
+    </div>
+
+    <div class="feature">
+      <h3>DLSS</h3>
+      <p>AI rendering for higher FPS and sharper visuals.</p>
+    </div>
+
+    <div class="feature">
+      <h3>RTX AI</h3>
+      <p>Advanced AI acceleration for creative workloads.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 NVIDIA Corporation — RTX Page
+</footer>
+
+</body>
+</html>

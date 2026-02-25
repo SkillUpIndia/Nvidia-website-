@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>NVIDIA AI | Accelerated Computing</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --green:#76b900;
+  --black:#0b0b0b;
+  --dark:#141414;
+  --text:#e6e6e6;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Segoe UI, Arial, sans-serif;
+}
+
+body{
+  background:var(--black);
+  color:var(--text);
+}
+
+/* NAVBAR */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 50px;
+  background:var(--dark);
+  border-bottom:2px solid var(--green);
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.brand img{
+  height:42px;
+}
+
+.brand-text{
+  color:white;
+  font-size:1.4rem;
+  font-weight:700;
+  letter-spacing:2px;
+}
+
+.brand-text:hover{
+  color:var(--green);
+}
+
+nav a{
+  color:var(--text);
+  margin-left:30px;
+  text-decoration:none;
+  font-weight:500;
+}
+
+nav a:hover{
+  color:var(--green);
+}
+
+/* HERO */
+.ai-hero{
+  min-height:80vh;
+  background:
+    linear-gradient(to right,rgba(0,0,0,.85),rgba(0,0,0,.4)),
+    url("https://blogs.nvidia.com/wp-content/uploads/2024/03/ai-decoded-nv-blog-1280x680-1.jpg");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  padding:60px;
+}
+
+.ai-hero h1{
+  font-size:3rem;
+  color:var(--green);
+}
+
+.ai-hero p{
+  max-width:600px;
+  margin:20px 0;
+  line-height:1.6;
+}
+
+/* SECTIONS */
+section{
+  padding:70px 50px;
+}
+
+section h2{
+  text-align:center;
+  color:var(--green);
+  font-size:2.3rem;
+  margin-bottom:40px;
+}
+
+/* AI FEATURES */
+.ai-features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+
+.feature{
+  background:var(--dark);
+  border:1px solid #222;
+  border-radius:8px;
+  padding:30px;
+  transition:.3s;
+}
+
+.feature:hover{
+  transform:translateY(-8px);
+  border-color:var(--green);
+}
+
+.feature h3{
+  color:var(--green);
+  margin-bottom:10px;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:25px;
+  background:var(--dark);
+  border-top:2px solid var(--green);
+  font-size:.9rem;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  header{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  nav a{
+    margin:0 12px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">
+    <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/2/21/Nvidia_logo.svg/330px-Nvidia_logo.svg.png" alt="NVIDIA Logo">
+    <span class="brand-text">NVIDIA</span>
+  </div>
+
+  <!-- ✅ CONNECTED NAVBAR -->
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="rtx.html">RTX</a>
+    <a href="ai.html">AI</a>
+    <a href="developers.html">Developers</a>
+    <a href="#">Support</a>
+  </nav>
+</header>
+
+<section class="ai-hero">
+  <div>
+    <h1>NVIDIA AI</h1>
+    <p>
+      Powering breakthroughs in artificial intelligence,
+      data centers, robotics, healthcare, and autonomous systems.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>AI Platforms & Solutions</h2>
+
+  <div class="ai-features">
+    <div class="feature">
+      <h3>Data Center AI</h3>
+      <p>Accelerated computing for large-scale AI workloads.</p>
+    </div>
+
+    <div class="feature">
+      <h3>Generative AI</h3>
+      <p>Foundation models and tools for next-gen AI creation.</p>
+    </div>
+
+    <div class="feature">
+      <h3>Autonomous Machines</h3>
+      <p>AI for robotics, self-driving cars, and smart systems.</p>
+    </div>
+
+    <div class="feature">
+      <h3>Healthcare AI</h3>
+      <p>AI-powered medical imaging, genomics, and research.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 NVIDIA Corporation — AI Page Concept
+</footer>
+
+</body>
+</html>

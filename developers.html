@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>NVIDIA Developers | GTC & AI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --green:#76b900;
+  --black:#0b0b0b;
+  --dark:#141414;
+  --text:#e6e6e6;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Segoe UI, Arial, sans-serif;
+}
+body{
+  background:var(--black);
+  color:var(--text);
+}
+
+/* NAVBAR */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 50px;
+  background:var(--dark);
+  border-bottom:2px solid var(--green);
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+}
+.brand img{height:40px;}
+.brand-text{
+  color:white;
+  font-size:1.3rem;
+  font-weight:700;
+  letter-spacing:2px;
+}
+.brand-text:hover{color:var(--green);}
+
+nav a{
+  color:var(--text);
+  margin-left:30px;
+  text-decoration:none;
+}
+nav a:hover{color:var(--green);}
+
+/* HERO */
+.dev-hero{
+  min-height:85vh;
+  background:
+    linear-gradient(to right,rgba(0,0,0,.85),rgba(0,0,0,.4)),
+    url("https://blogs.nvidia.com/wp-content/uploads/2025/01/GDOH4382-scaled.jpg");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  padding:60px;
+}
+.dev-hero h1{
+  color:var(--green);
+  font-size:3rem;
+}
+.dev-hero p{
+  max-width:600px;
+  margin:20px 0;
+  line-height:1.6;
+}
+.dev-hero a{
+  background:var(--green);
+  color:black;
+  padding:12px 26px;
+  text-decoration:none;
+  font-weight:bold;
+}
+.dev-hero a:hover{background:#8fd600;}
+
+/* TOOLS */
+section{padding:70px 50px;}
+section h2{
+  text-align:center;
+  color:var(--green);
+  font-size:2.3rem;
+  margin-bottom:40px;
+}
+.tools{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+.tool{
+  background:var(--dark);
+  padding:25px;
+  border:1px solid #222;
+  border-radius:8px;
+}
+.tool:hover{border-color:var(--green);}
+.tool h3{
+  color:var(--green);
+  margin-bottom:10px;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:25px;
+  background:var(--dark);
+  border-top:2px solid var(--green);
+  font-size:.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a href="home.html" class="brand">
+    <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/2/21/Nvidia_logo.svg/330px-Nvidia_logo.svg.png">
+    <span class="brand-text">NVIDIA</span>
+  </a>
+
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="rtx.html">RTX</a>
+    <a href="developers.html">Developers</a>
+    <a href="#">Support</a>
+  </nav>
+</header>
+
+<section class="dev-hero">
+  <div>
+    <h1>NVIDIA GTC</h1>
+    <p>
+      Watch NVIDIA CEO Jensen Huang’s keynote and explore
+      the future of AI, graphics, robotics, and accelerated computing.
+    </p>
+    <p><b>Monday, March 16 | 11 a.m.–1 p.m. PT</b></p>
+    <a target="_blank"
+       href="https://www.nvidia.com/gtc/keynote/?nvid=nv-int-bnr-581504">
+       Register Now
+    </a>
+  </div>
+</section>
+
+<section>
+  <h2>Developer Platforms</h2>
+  <div class="tools">
+    <div class="tool"><h3>CUDA</h3><p>Parallel computing platform powering GPU acceleration.</p></div>
+    <div class="tool"><h3>RTX SDK</h3><p>Real-time ray tracing and AI graphics tools.</p></div>
+    <div class="tool"><h3>Omniverse</h3><p>3D simulation and collaboration for developers.</p></div>
+    <div class="tool"><h3>AI & Deep Learning</h3><p>Frameworks and models for next-gen AI workloads.</p></div>
+  </div>
+</section>
+
+<footer>
+  © 2026 NVIDIA Corporation — Developer UI Concept
+</footer>
+
+</body>
+</html>
